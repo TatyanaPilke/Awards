@@ -53,7 +53,7 @@
     max-width: 185px;
     max-height: 51px;
 
-    @media (max-width: 576px) {
+    @include r($mobile) {
       max-width: 155px;
     }
   }
@@ -65,7 +65,7 @@
 
   &__menu {
 
-    @media (max-width: 1200px) {
+    @include r($desctop) {
       display: none;
       background-color: $white;
       position: absolute;
@@ -96,7 +96,7 @@
     letter-spacing: 1.3px;
     transition: color 0.5s ease;
 
-    @media (max-width: 1200px) {
+    @include r($desctop) {
       color: $black;
     }
 
@@ -110,7 +110,7 @@
       font-size: 14px;
       text-transform: none;
 
-      @media (max-width: 1200px) {
+      @include r($desctop) {
         color: $white;
       }
     }
@@ -150,7 +150,7 @@
       top: -10px;
     }
 
-    @media (max-width: 1200px) {
+    @include r($desctop) {
       display: block;
     }
   }
@@ -168,22 +168,22 @@
       left: -24px;
       background-color: #E29CFF;
 
-      @media (max-width: 1200px) {
+      @include r($desctop) {
         left: 100px;
         top: 5px;
       }
 
-      @media (max-width: 576px) {
+      @include r($mobile) {
         left: 85px;
       }
     }
 
-    @media (max-width: 1200px) {
+    @include r($desctop) {
       margin-right: 40px;
       display: flex;
     }
 
-    @media (max-width: 576px) {
+    @include r($mobile) {
       margin-left: 0;
       margin-right: 20px;
     }
@@ -200,12 +200,12 @@
         margin-right: 0;
       }
 
-      @media (max-width: 576px) {
+      @include r($mobile) {
         margin: 0;
       }
     }
 
-    @media (max-width: 1200px) {
+    @include r($desctop) {
       display: block;
       padding: 10px;
 
@@ -396,7 +396,7 @@
   &__image-04 {
     opacity: 0;
     height: 840px;
-    // transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
   }
   
   .active-image {
@@ -408,7 +408,7 @@
     position: absolute;
     z-index: 1;
 
-    @media (max-width: 992px) {
+    @include r($tablet) {
       top: 200px;
     }
   }
@@ -420,15 +420,15 @@
     line-height: 83.5px;
     margin-bottom: 56px;
 
-    @media (max-width: 992px) {
+    @include r($tablet) {
       font-size: 60px;
     }
 
-    @media (max-width: 768px) {
+    @include r($tablet-large) {
       font-size: 50px;
     }
 
-    @media (max-width: 576px) {
+    @include r($mobile) {
       font-size: 36px;
     }
   }
@@ -436,7 +436,7 @@
   &__date {
     margin-bottom: 85px;
 
-    @media (max-width: 768px) {
+    @include r($tablet-large) {
       flex-direction: column;
     }
   }
@@ -447,7 +447,7 @@
     display: block;
     margin-bottom: 15px;
 
-    @media (max-width: 576px) {
+    @include r($mobile) {
       font-size: 14px;
     }
   }
@@ -461,12 +461,12 @@
     &:first-child {
       margin-right: 60px;
 
-      @media (max-width: 768px) {
+      @include r($tablet-large) {
         margin-bottom: 20px;
       }
     }
 
-    @media (max-width: 576px) {
+    @include r($mobile) {
       font-size: 22px;
     }
   }
@@ -556,7 +556,7 @@
 
   &__button {
 
-    @media (max-width: 992px) {
+    @include r($tablet) {
       flex-direction: column;
     }
   }
@@ -594,13 +594,13 @@
         font-size: 30px;
         font-family: 'Linearicons-Free';
 
-        @media (max-width: 768px) {
+        @include r($tablet-large) {
           font-size: 25px;
           right: 20px;
         }
       }
 
-      @media (max-width: 768px) {
+      @include r($tablet-large) {
         font-size: 20px;
         width: 280px;
         padding: 22px 30px 26px 30px;
@@ -627,17 +627,17 @@
         font-size: 25px;
         font-family: 'Linearicons-Free';
 
-        @media (max-width: 768px) {
+        @include r($tablet-large) {
           font-size: 20px;
           right: 20px;
         }
       }
 
-      @media (max-width: 992px) {
+      @include r($tablet) {
         margin-top: 30px;
       }
 
-      @media (max-width: 768px) {
+      @include r($tablet-large) {
         font-size: 16px;
         width: 260px;
         padding: 16px 30px 15px 20px;
