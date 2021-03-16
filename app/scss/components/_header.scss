@@ -386,7 +386,7 @@
   &__image-04 {
     position: absolute;
     top: 0;
-    width: 750px;
+    width: 50%;
     object-fit: cover;
     right: 0;
     max-height: 840px;
@@ -395,8 +395,8 @@
   &__image-03, 
   &__image-04 {
     opacity: 0;
-    height: 840px;
-    // transition: opacity 0.3s ease-in-out;
+    max-height: 840px;
+    transition: opacity 0.3s ease-in-out;
   }
   
   .active-image {
