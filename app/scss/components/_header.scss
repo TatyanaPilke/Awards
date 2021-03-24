@@ -446,6 +446,7 @@
     color: $violet-text;
     display: block;
     margin-bottom: 15px;
+    animation: flash 4s infinite;
 
     @include r($mobile) {
       font-size: 14px;
@@ -577,9 +578,11 @@
     }
 
     &--btn1 {
+      display: inline-block;
       color: $white;
       width: 360px;
       max-height: 80px;
+      margin-right: 20px;
       font-size: 26px;
       font-weight: 600;
       padding: 22px 90px 26px 30px;
